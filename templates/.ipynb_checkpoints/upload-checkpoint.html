@@ -1,0 +1,39 @@
+<!doctype html>
+<title>Image Classifier</title>
+<h2>Upload an image:</h2>
+<p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+            <br/>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</p>
+{% if filename %}
+    <div>
+        <img src="{{ url_for('display_image', filename=filename) }}">
+    </div>
+<!-- <p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        Label: {{ messages[1] }}
+        <br/>
+        Accuracy: {{ messages[2] }}
+      {% endif %}
+    {% endwith %}
+</p> -->
+{% endif %}
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+    <p>
+        <input type="file" name="file" autocomplete="off" required>
+    </p>
+    </dl>
+    <p>
+    <input type="submit" value="Submit">
+    </p>
+</form>
