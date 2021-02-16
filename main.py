@@ -22,6 +22,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+
 # load and prepare the image
 def load_image(filename):
     # load the image
@@ -34,7 +35,7 @@ def load_image(filename):
     img = img.astype('float32')
     img = img / 255.0
     return img
-    
+
 
 def predict(filename):
     # load the image
@@ -45,13 +46,14 @@ def predict(filename):
     res = model.predict(img)
     label = np.argmax(res)
     print(res, label)
-    labelName = LBL[label]
-    return labelName
+    label_name = LBL[label]
+    return label_name
 
 
 @app.route('/')
 def upload_form():
     return render_template('upload.html')
+
 
 @app.route('/', methods=['POST'])
 def upload_image():
@@ -73,9 +75,11 @@ def upload_image():
         flash('Allowed image types are -> png, jpg, jpeg, gif')
         return redirect(request.url)
 
+
 @app.route('/display/<filename>')
 def display_image(filename):
     return redirect(url_for('static', filename='uploads/' + filename), code=301)
+
 
 if __name__ == "__main__":
     app.run()

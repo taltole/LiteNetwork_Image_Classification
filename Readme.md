@@ -1,8 +1,8 @@
 # CIFAR10 – SqueezeNet
 
-In this work, I experiment with SqueezeNet neural network based on the following paper: https://arxiv.org/abs/1602.07360.
+In this work, I experiment with SqueezeNet neural network based on the following paper: https://arxiv.org/abs/1602.07360. <br/>
 To solve a classification task using dataset called CIFAR 10, which can be found here:  https://www.cs.toronto.edu/~kriz/cifar.html.
-
+<br/>
 ### CIFAR10:
 -	60000 32x32 color images in 10 classes, with 6000 images per class. 
 -	50000 training images and 10000 test images.
