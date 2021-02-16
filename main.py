@@ -33,7 +33,6 @@ def load_image(filename):
     # prepare pixel data
     img = img.astype('float32')
     img = img / 255.0
-#     plt.imshow(np.transpose(img.reshape(3, 32, 32), (1,2,0)))
     return img
     
 
