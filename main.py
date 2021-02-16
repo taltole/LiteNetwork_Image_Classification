@@ -68,9 +68,7 @@ def upload_image():
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         flash('Image successfully uploaded and displayed below')
         label = predict(filename)
-        acc = '10000'
         flash(f'Prediction: {label.title()}')
-#         flash(f'Accuracy: {acc}')
         return render_template('upload.html', filename=filename)
     else:
         flash('Allowed image types are -> png, jpg, jpeg, gif')
