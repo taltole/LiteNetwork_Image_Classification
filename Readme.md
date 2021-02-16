@@ -1,6 +1,6 @@
 # CIFAR10 – SqueezeNet
 
-In this work, I experiment with SqueezeNet neural network based on the following paper: https://arxiv.org/abs/1602.07360. 
+In this work, I experiment with SqueezeNet neural network based on the following paper: https://arxiv.org/abs/1602.07360.
 To solve a classification task using dataset called CIFAR 10, which can be found here:  https://www.cs.toronto.edu/~kriz/cifar.html.
 
 ### CIFAR10:
