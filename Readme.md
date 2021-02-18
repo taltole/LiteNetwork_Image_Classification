@@ -27,15 +27,5 @@ After more than 200 epoch accuracy reaches >0.8 and loss below 0.8.
 
 
 ### Inference
-Running inference on REST flask API by run main.py from terminal and paste  the local server url provides from the output in the browser. 
-
-
-# deepfakes_faceswap
-<p align="center">
-  <a href="https://faceswap.dev"><img src="https://i.imgur.com/zHvjHnb.png"></img></a>
-<br />FaceSwap is a tool that utilizes deep learning to recognize and swap faces in pictures and videos.
-</p>
-<p align="center">
-<img src = "https://i.imgur.com/nWHFLDf.jpg"></img>
-</p>
+Running inference on REST flask API by run main.py from terminal and paste the local server url provides from the output in the browser. 
 
