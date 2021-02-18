@@ -1,0 +1,7 @@
+.idea
+*.iml
+out
+gen
+.idea/
+txt/
+Untitled.ipynb
