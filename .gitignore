@@ -5,3 +5,5 @@ gen
 .idea/
 txt/
 Untitled.ipynb
+__pycache__\
+.ipynb_checkpoints\
