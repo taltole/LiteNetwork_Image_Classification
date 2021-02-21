@@ -10,7 +10,7 @@ import numpy as np
 # Constants
 CLASSES = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 LBL = dict(zip(range(10), CLASSES))
-MODEL_PATH = os.path.join(os.getcwd(), 'image_classifier_squeeze_net.h5')
+MODEL_PATH = os.path.join(os.getcwd(), 'saves/model.h5')
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'static/uploads')
 
