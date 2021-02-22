@@ -16,7 +16,7 @@ The training batches contain the remaining images in random order, but some trai
 •	The results are found in Squeezenet_Classifier notebook and main.py app for the inference code.
 
 ## Squeeze Net:
-I tried two strategies to improve model performance, since CIFAR images are considerably smaller than ImageNet used for the original work. I created and focus the rest of this task on a smaller model for CIFAR-10 data set inspired by the 'Squeeze Net' architecture proposed by Forrest Iandola et al. (2016) and the work of Zac Hancock. I used similar components (fire module, etc.) and add some additional dropout and batch normalization layers to deal with overfitting and slow learning rate, respectively.
+I tried two strategies to improve model performance, since CIFAR images are considerably smaller than ImageNet used for the original work. I created and focus the rest of this task on a smaller model for CIFAR-10 data set inspired by the 'Squeeze Net' architecture proposed by Forrest Iandola et al. (2016) and the work of Zac Hancock. I used similar components (fire module, etc.) and add some additional dropout and batch normalization layers to deal with overfitting and slow learning rate, respectively.</br>
 Essentially, the fire module implements a strategy wherein it minimizes the input parameters by utilizing a 'squeeze layer' that only uses 1x1 filters. After the 'squeeze layer' is a series of both 1x1 and 3x3 filters in the 'expand layer' where later the expand layer is then concatenated. 
 The benefits from using 1x1 filters are as follow:</br>
 
