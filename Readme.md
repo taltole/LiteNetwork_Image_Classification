@@ -21,7 +21,7 @@ Essentially, the fire module implements a strategy wherein it minimizes the inpu
 The benefits from using 1x1 filters are as follow:</br>
 - The 1×1 filter can be used to create a linear projection of a stack of feature maps.
 - The projection created by a 1×1 can act like channel-wise pooling and be used for dimensionality reduction.
-- The projection created by a 1×1 can also be used directly or be used to increase the number of feature maps in a model.
+- The projection created by a 1×1 can also be used directly or be used to increase the number of feature maps in a model.</br>
 Using the fire module outlined above, the architecture was completed. Max Pooling happens after the very first convolution layer, followed by 4 fire modules. After the last fire module, 20% dropout is committed before the last convolution layer. Global pooling is committed right before SoftMax activation into 10 classes. 
 Model summary and complete layers configuration found in Notebook. Number of layers were the same as in the Iandola paper only with 1/6 of number of parameters and with comparable performance.
 
