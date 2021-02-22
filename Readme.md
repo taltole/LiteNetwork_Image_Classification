@@ -33,5 +33,11 @@ After more than 200 epoch accuracy reaches >0.8 and loss below 0.8.
 
 
 ### Inference
-Running inference on REST flask API by run main.py from terminal and paste the local server url provides from the output in the browser. 
+Running inference on REST flask API by run main.py from terminal and paste the local server url provides from the output in the browser. </br>
+<!--- <p align="center">
+  <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/static/uploads/1.jpg? width="350" title="hover text">
+  <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/static/uploads/1.jpg? width="350" alt="accessibility text">
+</p>
+ ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+--->
 
