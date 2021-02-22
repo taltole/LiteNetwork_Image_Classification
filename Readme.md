@@ -19,9 +19,11 @@ The training batches contain the remaining images in random order, but some trai
 I tried two strategies to improve model performance, since CIFAR images are considerably smaller than ImageNet used for the original work. I created and focus the rest of this task on a smaller model for CIFAR-10 data set inspired by the 'Squeeze Net' architecture proposed by Forrest Iandola et al. (2016) and the work of Zac Hancock. I used similar components (fire module, etc.) and add some additional dropout and batch normalization layers to deal with overfitting and slow learning rate, respectively.
 Essentially, the fire module implements a strategy wherein it minimizes the input parameters by utilizing a 'squeeze layer' that only uses 1x1 filters. After the 'squeeze layer' is a series of both 1x1 and 3x3 filters in the 'expand layer' where later the expand layer is then concatenated. 
 The benefits from using 1x1 filters are as follow:</br>
+
 - The 1×1 filter can be used to create a linear projection of a stack of feature maps.
 - The projection created by a 1×1 can act like channel-wise pooling and be used for dimensionality reduction.
 - The projection created by a 1×1 can also be used directly or be used to increase the number of feature maps in a model.</br>
+
 Using the fire module outlined above, the architecture was completed. Max Pooling happens after the very first convolution layer, followed by 4 fire modules. After the last fire module, 20% dropout is committed before the last convolution layer. Global pooling is committed right before SoftMax activation into 10 classes. 
 Model summary and complete layers configuration found in Notebook. Number of layers were the same as in the Iandola paper only with 1/6 of number of parameters and with comparable performance.
 
