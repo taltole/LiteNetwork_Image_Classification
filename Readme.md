@@ -7,7 +7,10 @@ To solve a classification task using CIFAR 10 dataset, which can be found here: 
 -	60000 32x32 color images in 10 classes, with 6000 images per class. 
 -	50000 training images and 10000 test images.
 -	CLASSES = 'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'
-
+ <p align="center">
+  <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/saves/cifar.png? width="350" alt="accessibility text">
+</p>
+ ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 The dataset is divided into five training batches and one test batch, each with 10000 images.
 The test batch contains exactly 1000 randomly-selected images from each class. 
 The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. 
@@ -34,10 +37,10 @@ After more than 200 epoch accuracy reaches >0.8 and loss below 0.8.
 
 ### Inference
 Running inference on REST flask API by run main.py from terminal and paste the local server url provides from the output in the browser. </br>
-<!--- <p align="center">
-  <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/static/uploads/1.jpg? width="350" title="hover text">
-  <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/static/uploads/1.jpg? width="350" alt="accessibility text">
+ <p align="center">
+  <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/saves/deploy.png? width="350" title="hover text">
 </p>
  ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+<!---
 --->
 
