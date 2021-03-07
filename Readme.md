@@ -11,7 +11,7 @@ To solve a classification task using CIFAR 10 dataset, which can be found here: 
   <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/saves/cifar.png? width="350" alt="accessibility text">
 </p>
  
-The dataset is divided into five training batches and one test batch, each with 10000 images.
+The dataset split among five training batches and one test batch, each with 10000 images.
 The test batch contains exactly 1000 randomly-selected images from each class. 
 The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. 
 
