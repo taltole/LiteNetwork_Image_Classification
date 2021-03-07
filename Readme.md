@@ -10,7 +10,7 @@ To solve a classification task using CIFAR 10 dataset, which can be found here: 
  <p align="center">
   <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/saves/cifar.png? width="350" alt="accessibility text">
 </p>
- ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+ 
 The dataset is divided into five training batches and one test batch, each with 10000 images.
 The test batch contains exactly 1000 randomly-selected images from each class. 
 The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. 
@@ -40,7 +40,7 @@ Running inference on REST flask API by run main.py from terminal and paste the l
  <p align="center">
   <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/saves/deploy.png? width="350" title="hover text">
 </p>
- ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 <!---
+ ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 --->
 
