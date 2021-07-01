@@ -8,7 +8,7 @@ To solve a classification task using CIFAR 10 dataset, which can be found here: 
 -	50000 training images and 10000 test images.
 -	CLASSES = 'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'
  <p align="center">
-  <img src=https://github.com/taltole/CIFAR10_SqueezeNet/blob/master/saves/cifar.png? width="350" alt="accessibility text">
+  <img src=https://www.icloud.com/#notes2/0AvrbmHr8CVqyOZ3ZbYDMLqeQ? width="350" alt="accessibility text">
 </p>
  
 The dataset split among five training batches and one test batch, each with 10000 images.
